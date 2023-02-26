@@ -32,11 +32,24 @@
         <div class="iconos">
             <i class="bx bxs-cart bx-lg"></i>
             <i class="bx bx-user bx-lg"></i>
-            <i class="bx bx-menu bx-lg"></i>
+            <div class="menu" id="menu" onclick="llamar()">
+                <i class="bx bx-menu bx-lg cerrar"></i>
+            </div>
         </div>
     </header>
     
     <div class="banner">
+        <nav class="botonera" id="botonera">
+            <ul>
+                <li><a href="#sobremi">Sobre mi</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
     <main>
 
@@ -44,6 +57,9 @@
     <footer>
         <!-- place footer here -->
     </footer>
+
+    <script src="js/script.js"></script>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
