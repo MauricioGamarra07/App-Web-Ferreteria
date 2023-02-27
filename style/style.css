@@ -61,10 +61,45 @@ header{
     width: 100%;
     height: 85vh;
 }
+.banner2{
+    position: relative;
+    background-image: url(../img/proveedor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.banner3{
+    position: relative;
+    background-image: url(../img/cliente.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.banner4{
+    position: relative;
+    background-image: url(../img/usuario.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+}
 .botonera{
     background-color: rgb(255, 166, 0);
     width: 280px;
     height: 85vh;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.botonera2{
+    background-color: rgb(255, 166, 0);
+    
     position: absolute;
     right: 0;
     display: none;
@@ -140,4 +175,34 @@ header{
     .logo{
         width: 260px;
     }
+
+
+}
+
+.form{
+
+
+    padding: 80px  120px;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #080808;
+    font-size:x-large;
+    
+
+}
+
+.form input{
+
+    font-size: 40px;
+    
+    margin-bottom: 15px;
+    color: #c0b62d;
+    
 }
