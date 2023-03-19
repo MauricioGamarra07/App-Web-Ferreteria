@@ -15,6 +15,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
 
 </head>
 
@@ -30,14 +31,14 @@
             <i class="bx bx-search-alt-2 bx-md icono-buscar"></i>
         </div>
         <div class="iconos">
-            <i class="bx bxs-cart bx-lg"></i>
-            <i class="bx bx-user bx-lg"></i>
+            <i class="bx bxs-cart carrito bx-lg" id="contador">0</i>
+            <i class="bx bx-user login bx-lg"></i>
             <div class="menu" id="menu" onclick="llamar()">
                 <i class="bx bx-menu bx-lg cerrar"></i>
             </div>
         </div>
     </header>
-    
+
     <div class="banner">
         <nav class="botonera" id="botonera">
             <ul>
@@ -49,12 +50,84 @@
     </div>
     <main>
 
+        <div class="info container bg-warning mt-5 mb-5">
+            <h1 class="text-center">Nosotros</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iure ullam quae quia doloribus id! Facere
+                temporibus consequuntur quia repellat atque labore exercitationem tempora repudiandae?</p>
+        </div>
+
+        <section class="modal-compra">
+            <div class="cont-compra">
+                <h1 class="text-warning text-center">Carrito de Compras</h1>
+                <i class="bx bxs-x-circle bx-md text-danger" id="boton-cerrar"></i>
+                <div class="info-carrito">
+                    <table class="table table-warning table-striped table-responsive-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Plato</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="info-compra">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pie-compra">
+                    <p class="btn btn-success" id="procesar">Procesar Pedido</p>
+                    <p>Precio Total:
+                        <b class="precioTotal" style="font-size: 24px;">S/ 0.00</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="columnas4">
+        </section>
     </main>
+
     <footer>
-        <!-- place footer here -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/logoFerreteria.png" alt="" style="width: 10rem; border-radius: 50%;">
+                    <h4>Siguenos en:</h4>
+                    <h3>Ferretería Obregón</h3>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Horario de Atención</h2>
+                    <div class="linea2"></div>
+                    <p>Todos los dias de 9:00am - 9:00pm</p>
+                    <p>Lunes a Viernes de 9:00am - 9:00pm</p>
+                    <p>Sábados y Domingos de 9:00am - 5:30pm</p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Contáctanos en:</h2>
+                    <div class="linea2"></div>
+                    <ul>
+                        <li>Los Portales</li>
+                        <li>Celular:961 256 785/987 356 321</li>
+                        <li>Correo:somosferreobregon@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+
     </footer>
 
+    <!--Archivo Javascript-->
     <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/articulos.js"></script>
+    <script src="js/cargaArticulos.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+    <!--FONTAWESOME CDN-->
+    <script src="https://kit.fontawesome.com/cb68de0b4a.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
