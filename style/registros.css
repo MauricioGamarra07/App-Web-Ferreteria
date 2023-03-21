@@ -1,4 +1,4 @@
-.banner2,.banner3,.banner4{
+.banner2,.banner3,.banner4,.banner5,.banner6{
     position: absolute;
     background-size: 100% 100%;
     background-image: url(../img/logoFerreteria.png);
@@ -13,6 +13,12 @@
 }
 .banner4{
     height: 135vh;
+}
+.banner5{
+    height: 100vh;
+}
+.banner6{
+    height: 140vh;
 }
 .formulario{
     position: relative;
@@ -34,9 +40,24 @@ label{
 .form input{
     font-size: 24px;
     margin-bottom: 15px;
-    color: rgb(235, 235, 25);
+    color: black;
     border: 3px solid black;
     border-radius: 10px;
+}
+#guardar{
+    color: yellow;
+}
+select{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+textarea{
+    border: 3px solid black;
+    min-height: 100px;
+    max-height: 160px;
 }
 .submit{
     margin-top: 20px;
